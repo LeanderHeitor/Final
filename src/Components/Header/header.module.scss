@@ -1,0 +1,89 @@
+.header{
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14.6vh;
+    padding: 0px 16px 0px 0px;
+    img{
+        width: 3.1vw;
+        height: 6.5vh;
+    }
+}
+.header__title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 22%;
+    h1{
+        font-size: 30px;
+    }
+}
+
+.header__nav{
+    width: 40%;
+}
+.header__ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+
+}
+
+.header__link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;;
+}
+.header__input{
+    width: 20%;
+    height: 5.4vh;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    background: url("../../assets/Header/Busca.png") no-repeat;
+    background-position: 85%;
+    border: solid 1.7px white;
+}
+.header__input::placeholder{
+    color: white;
+}
+@media screen and (max-width: 390px){
+    .header__input{
+        display: none;
+    }
+    .header{
+        padding: 0;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 12.5vh;
+        img{
+            width: 12.1vw;
+            height: 4.2vh;
+        }
+    }
+    .header__title{
+        width: 100%;
+        height: 65%;
+        h1{
+            font-size: 22px;
+        }
+    }
+    .header__nav{
+        width: 100%;
+        
+    }
+    .header__ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        
+    }
+}
